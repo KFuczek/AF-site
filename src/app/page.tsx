@@ -7,7 +7,7 @@ export default function Home() {
         <h1>Hej, to Next.js na GitHub Pages 🚀</h1>
         <div className={styles.pin}>guzik</div>
           <Image
-              src="/vercel.svg"
+              src="AF-site/vercel.svg"
               alt="Vercel logomark"
               width={20}
               height={20}
