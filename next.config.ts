@@ -2,7 +2,7 @@ import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
     output: 'export',
-    basePath: '/AF-site',
+    basePath: process.env.ENV ? '' : '/AF-site',
     images: {
         unoptimized: true,
     },
