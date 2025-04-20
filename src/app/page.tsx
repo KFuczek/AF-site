@@ -6,7 +6,7 @@ const { publicRuntimeConfig } = getConfig();
 
 export default function Home() {
   const basePath = publicRuntimeConfig?.basePath || "";
-
+console.log('test', basePath);
   return (
       <main>
         <h1>Hej, to Next.js na GitHub Pages 🚀</h1>
