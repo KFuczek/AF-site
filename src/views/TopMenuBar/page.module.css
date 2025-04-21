@@ -1,0 +1,22 @@
+.wrapper {
+    padding: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    .info {
+        height: 80%;
+        width: 200px;
+        border: 1px solid black;
+    }
+
+    .menu {
+        height: 50px;
+        width: 50px;
+        background-color: red;
+    }
+}

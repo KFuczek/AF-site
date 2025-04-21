@@ -1,0 +1,13 @@
+.main {
+    position: relative;
+    height: 100vh;
+    overflow: scroll;
+
+    .topMenuBar {
+        height: 80px;
+        width: 100%;
+        top: 0;
+        background-color: aquamarine;
+        position: sticky;
+    }
+}
