@@ -2,9 +2,9 @@
 
 import styles from "./page.module.css";
 
-export default function Footer() {
+export default function header() {
 
   return (
-    <div className={styles.wrapper}>FOOTER</div>
+    <div className={styles.wrapper}>Footer</div>
   );
 }

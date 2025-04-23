@@ -10,7 +10,7 @@ export default function TopMenuBar() {
           <div className={styles.logo}>PROTECHNIKA</div>
           <div className={styles.tel}>+1234567890</div>
         </div>
-        <div className={styles.menu}>MENU</div>
+        <div className={styles.menu}><div></div><div></div></div>
       </div>
   );
 }

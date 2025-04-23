@@ -1,22 +1,102 @@
+/*.wrapper {*/
+/*    padding: 10px;*/
+/*    top: 50%;*/
+/*    transform: translateY(-50%);*/
+/*    position: relative;*/
+/*    display: flex;*/
+/*    flex-direction: row;*/
+/*    justify-content: space-between;*/
+/*    align-items: center;*/
+
+/*    .info {*/
+/*        height: 80%;*/
+/*        width: 200px;*/
+/*        border: 1px solid black;*/
+/*    }*/
+
+/*    .menu {*/
+/*        height: 50px;*/
+/*        width: 50px;*/
+/*        background-color: red;*/
+/*    }*/
+/*}*/
+
 .wrapper {
-    padding: 10px;
-    top: 50%;
-    transform: translateY(-50%);
+    padding: 10px 20px;
+    height: 100%;
+    width: 100%;
     position: relative;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    background-color: #ffffff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    border-bottom: 2px solid #f0f0f0;
 
     .info {
-        height: 80%;
-        width: 200px;
-        border: 1px solid black;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 5px;
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #333;
+        }
+
+        .tel {
+            font-size: 0.9rem;
+            color: #666;
+        }
     }
 
     .menu {
         height: 50px;
         width: 50px;
-        background-color: red;
+        background-color: #4CAF50;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        cursor: pointer;
+        transition: transform 0.2s ease, background-color 0.2s ease;
     }
+
+    .menu::before,
+    .menu::after,
+    .menu div {
+        content: '';
+        position: absolute;
+        width: 20px;
+        height: 2px;
+        background-color: white;
+        transition: transform 0.2s ease;
+    }
+
+    .menu::before {
+        top: 12px;
+    }
+
+    .menu::after {
+        top: 18px;
+    }
+
+    .menu div:nth-child(1) {
+        top: 24px;
+    }
+
+    .menu div:nth-child(2) {
+        top: 30px;
+    }
+
+    .menu:hover {
+        background-color: #388E3C;
+        transform: scale(1.1);
+    }
+
 }

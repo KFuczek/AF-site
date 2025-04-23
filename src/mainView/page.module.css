@@ -3,10 +3,25 @@
     height: 100vh;
     overflow: scroll;
 
+    .header {
+
+    }
+    .home {
+
+    }
+
+    .footer {
+
+    }
+
+    .paragraph {
+
+    }
+
     .topMenuBar {
         height: 80px;
         width: 100%;
-        top: 0;
+        top: 0px;
         background-color: aquamarine;
         position: sticky;
     }
