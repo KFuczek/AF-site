@@ -18,9 +18,9 @@ export default function TopMenuBar() {
           <div className={styles.tel}>+1234567890</div>
         </div>
         <button className={styles.menu} onClick={toggleMenu}><div></div><div></div></button>
-          <div className={styles.modalMenu}>
-              { menuIsOpen && <ModalMenu toggleMenu={toggleMenu}/>}
-          </div>
+          { menuIsOpen && <div className={styles.modalMenu}>
+              <ModalMenu toggleMenu={toggleMenu}/>
+          </div> }
       </div>
     );
 }
