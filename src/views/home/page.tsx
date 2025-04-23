@@ -14,8 +14,8 @@ export default function Home() {
           <Image
               src={`${basePath}default-image.png`}
               alt="Vercel logomark"
-              width={200}
-              height={200}
+              width={300}
+              height={400}
           />
       </div>
     </div>
