@@ -1,10 +1,10 @@
 import styles from './page.module.css';
 
-export default function ModalMenu({toggleMenu}: {toggleMenu: () => void}) {
+export default function ModalMenu({toggleMenu}: {toggleMenu: (event: React.MouseEvent<HTMLElement>) => void}) {
 
     return (
         <div className={styles.modalWrapper}>
-            <div className={styles.modal}>
+            <div className={styles.modal} onClick={toggleMenu}>
                 <div className={styles.modalContent}>
                     <button className={styles.closeButton} onClick={toggleMenu}>
                         &times;

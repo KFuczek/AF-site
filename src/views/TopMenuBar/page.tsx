@@ -7,7 +7,12 @@ import {useState} from "react";
 export default function TopMenuBar() {
     const [menuIsOpen, setMenuIsOpen] = useState(false);
 
-    const toggleMenu = () => {
+    const toggleMenu = (event: React.MouseEvent<HTMLElement>) => {
+        event.preventDefault();
+        event.stopPropagation();
+        if (event.target !== event.currentTarget) {
+            return;
+        }
         setMenuIsOpen(!menuIsOpen);
     }
 
