@@ -2,10 +2,10 @@
     position: relative;
     height: 100vh;
     overflow: scroll;
-    margin: 10px;
+    margin: 0px 10px 10px 10px;
 
     .header {
-
+        margin-top: 20px;
     }
 
     .home {
