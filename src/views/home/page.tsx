@@ -1,23 +1,21 @@
 'use client';
 
 import styles from "./page.module.css";
-//import Image from "next/image";
 import Carousel from "@/components/carousel/page";
+import PrimaryButton from "@/components/primary-button/page";
 
 export default function Home() {
-
-    //const basePath= process.env.BASE_PATH || '';
 
     return (
         <div className={styles.wrapper}>
             <div>
                 <Carousel/>
-                {/*<Image*/}
-                {/*    src={`${basePath}default-image.png`}*/}
-                {/*    alt="Vercel logomark"*/}
-                {/*    width={300}*/}
-                {/*    height={400}*/}
-                {/*/>*/}
+                <div className={styles.buttons}>
+                    <PrimaryButton text={'text 1'}/>
+                    <PrimaryButton text={'text 2'}/>
+                    <PrimaryButton text={'text 3'}/>
+                    <PrimaryButton text={'text 4'}/>
+                </div>
             </div>
         </div>
     );

@@ -1,0 +1,13 @@
+.primaryButton {
+    height: 60px;
+    width: 100%;
+    background-color: #D8EABF;
+    border: none;
+    border-radius: 20px;
+
+    span {
+        color: #2C3F27;
+        font-size: 1.5rem;
+        font-family: 'open-sans', sans-serif;
+    }
+}
