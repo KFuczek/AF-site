@@ -1,11 +1,12 @@
 .carousel {
-    margin: 20px 0;
+    margin: 20px 10px;
     height: 200px;
-    width: 100%;
+    width: fill-available;
     position: relative;
 
     .imagesContainer {
         height: fill-available;
+        width: fill-available;
         overflow: hidden;
         display: flex;
         flex-direction: row;
