@@ -12,6 +12,7 @@ export default function Header() {
             <div className={styles.text}>{DICTIONARY.header}</div>
             <div className={styles.imageWrapper}>
                 <Image
+                    className={styles.image}
                     src={`${basePath}branch.svg`}
                     alt="Vercel logomark"
                     width={100}

@@ -1,6 +1,9 @@
 "use client";
 import styles from './page.module.css';
 import {useEffect, useRef} from "react";
+import Image from "next/image";
+
+//const BASE_PATH = process.env.BASE_PATH || '';
 
 export default function Carousel() {
     const slides = useRef<HTMLDivElement>(null);
@@ -53,11 +56,16 @@ export default function Carousel() {
     return (
         <div className={styles.carousel}>
             <div ref={slides} className={styles.imagesContainer} id="imgs">
-                <img src="https://picsum.photos/id/1015/500/500" alt="pic1" width="100%" height="100%"/>
-                <img src="https://picsum.photos/id/1016/500/500" alt="pic2" width="100%" height="100%"/>
-                <img src="https://picsum.photos/id/1018/500/500" alt="pic3" width="100%" height="100%"/>
-                <img src="https://picsum.photos/id/1019/500/500" alt="pic4" width="100%" height="100%"/>
-                <img src="https://picsum.photos/id/1021/500/500" alt="pic5" width="100%" height="100%"/>
+                <Image className={styles.image} src="https://picsum.photos/id/1015/500/500" alt="pic1" width={200}
+                       height={100}/>
+                <Image className={styles.image} src="https://picsum.photos/id/1016/500/500" alt="pic2" width={200}
+                       height={100}/>
+                <Image className={styles.image} src="https://picsum.photos/id/1018/500/500" alt="pic3" width={200}
+                       height={100}/>
+                <Image className={styles.image} src="https://picsum.photos/id/1019/500/500" alt="pic4" width={200}
+                       height={100}/>
+                <Image className={styles.image} src="https://picsum.photos/id/1021/500/500" alt="pic5" width={200}
+                       height={100}/>
             </div>
             <div className={styles.sliderNav} ref={sliderNav}>
                 <div className={`${styles.sliderNavlink} ${styles.slideActive}`}></div>
