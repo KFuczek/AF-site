@@ -1,12 +1,18 @@
 .carousel {
-    margin: 20px 10px;
-    height: 200px;
-    width: fill-available;
+
     position: relative;
+    padding: 10px;
+    object-fit: cover;
+    aspect-ratio: 1 / 1;
+    width: 100%;
+    max-width: 400px;
+    height: auto;
 
     .imagesContainer {
         height: fill-available;
         width: fill-available;
+        max-height: inherit;
+        max-width: inherit;
         overflow: hidden;
         display: flex;
         flex-direction: row;
