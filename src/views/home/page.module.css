@@ -1,26 +1,32 @@
 .wrapper {
-    overflow: scroll;
+    overflow-y: scroll;
+    overflow-x: hidden;
     height: fill-available;
     display: flex;
     flex-direction: column;
+    align-items: center;
 
     .buttons {
+        max-width: 400px;
         display: flex;
-        margin: 20px 10px;
-        flex-direction: column;
         gap: 15px;
-        position: relative;
-        height: 100%;
         z-index: 2;
+        margin: 20px;
+
+        .column {
+            width: 50%;
+        }
     }
 
     .carouselWrapper {
+        border-top: 2px solid white;
         position: relative;
         width: 100%;
         margin-top: 10px;
         display: flex;
         align-items: center;
         justify-content: center;
+        background-color: #00362B;
     }
 
     .textWrapper {
@@ -33,6 +39,7 @@
         font-weight: bold;
         color: white;
         font-family: "Roboto Slab", sans-serif;
+        background-color: #00362B;
 
         .text {
             border: solid white 1px;

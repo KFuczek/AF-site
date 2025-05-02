@@ -14,20 +14,31 @@ export default function Home() {
             <div className={styles.backgroundImage}>
                 <Image
                     className={styles.image}
-                    src={`${basePath}zisam.png`}
+                    src={`${basePath}zisam.jpg`}
                     alt="Vercel logomark"
                     width={100}
                     height={100}
                 />
             </div>
             <div className={styles.buttons}>
-                <PrimaryButton text={'text 1'}/>
-                <PrimaryButton text={'text 2'}/>
-                <PrimaryButton text={'text 3'}/>
-                <PrimaryButton text={'text 4'}/>
-                <PrimaryButton text={'text 5'}/>
-                <PrimaryButton text={'text 6'}/>
-                <PrimaryButton text={'text 7'}/>
+                <div className={styles.column}>
+                    <PrimaryButton text={'Informacje'} url={'cheese'}
+                                   description={'tutaj będize jakiś tekst, więcej tekstu i jeszcze troche'}/>
+                    <PrimaryButton text={'Historia'} url={'hamburger'}
+                                   description={'tutaj będize jakiś tekst, więcej tekstu i jeszcze troche'}/>
+                    <PrimaryButton text={'Jak zamówić'} url={'cheese'}
+                                   description={'tutaj będize jakiś tekst, więcej tekstu i jeszcze troche'}/>
+                    <PrimaryButton text={'Kontakt'} url={'chef'}
+                                   description={'tutaj będize jakiś tekst, więcej tekstu i jeszcze troche'}/>
+                </div>
+                <div className={styles.column}>
+                    <PrimaryButton text={'Nowości'} url={'cheese'}
+                                   description={'tutaj będize jakiś tekst, więcej tekstu i jeszcze troche'}/>
+                    <PrimaryButton text={'Realizacje'} url={'chef'}
+                                   description={'tutaj będize jakiś tekst, więcej tekstu i jeszcze troche'}/>
+                    <PrimaryButton text={'Więcej'} url={'cheese'}
+                                   description={'tutaj będize jakiś tekst, więcej tekstu i jeszcze troche'}/>
+                </div>
             </div>
             <div className={styles.textWrapper}>
                 <span className={styles.text}>{DICTIONARY.carouselText}</span>
