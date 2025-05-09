@@ -1,6 +1,6 @@
 .wrapper {
     position: relative;
-    background-color: #00362B;
+    background-color: #1D3D4F;
     height: 100px;
     padding: 10px;
 
@@ -9,13 +9,10 @@
         left: 50%;
         height: 100%;
         transform: translateX(-50%);
-        border: solid white 1px;
-        border-radius: 25%;
         width: 100%;
-        background-color: #D8EABF;
-        color: #2C3B1C;
+        background-color: #1D3D4F;
+        color: white;
         padding: 20px;
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         display: flex;
         align-items: center;
         justify-content: center;
@@ -33,7 +30,6 @@
         height: 70px;
         width: 70px;
         object-fit: fill;
-        top: 10px;
         left: 20px;
 
         .image {

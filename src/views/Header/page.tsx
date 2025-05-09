@@ -8,7 +8,7 @@ export default function Header() {
     const basePath = process.env.BASE_PATH || '';
 
     return (
-        <div className={styles.wrapper}>
+        <div id='header' className={styles.wrapper}>
             <div className={styles.header}>
                 <div className={styles.text}>{DICTIONARY.header}</div>
                 <div className={styles.imageWrapper}>

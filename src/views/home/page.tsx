@@ -5,12 +5,15 @@ import PrimaryButton from "@/components/primary-button/page";
 import Image from "next/image";
 import Carousel from "@/components/carousel/page";
 import {DICTIONARY} from "@/dictionary";
+import {ParagraphData} from "../../../data/types";
 
-export default function Home() {
+export default function Home({paragraphData}: { paragraphData: ParagraphData }) {
     const basePath = process.env.BASE_PATH || '';
 
+    const {news, history, info, realization, howToOrder, more, contact} = paragraphData;
+
     return (
-        <div className={styles.wrapper}>
+        <div id='home' className={styles.wrapper}>
             <div className={styles.backgroundImage}>
                 <Image
                     className={styles.image}
@@ -22,22 +25,15 @@ export default function Home() {
             </div>
             <div className={styles.buttons}>
                 <div className={styles.column}>
-                    <PrimaryButton text={'Informacje'} url={'cheese'}
-                                   description={'tutaj będize jakiś tekst, więcej tekstu i jeszcze troche'}/>
-                    <PrimaryButton text={'Historia'} url={'hamburger'}
-                                   description={'tutaj będize jakiś tekst, więcej tekstu i jeszcze troche'}/>
-                    <PrimaryButton text={'Jak zamówić'} url={'cheese'}
-                                   description={'tutaj będize jakiś tekst, więcej tekstu i jeszcze troche'}/>
-                    <PrimaryButton text={'Kontakt'} url={'chef'}
-                                   description={'tutaj będize jakiś tekst, więcej tekstu i jeszcze troche'}/>
+                    <PrimaryButton data={info.teaser} buttonId={info.scrollId}/>
+                    <PrimaryButton data={news.teaser} buttonId={news.scrollId}/>
+                    <PrimaryButton data={history.teaser} buttonId={history.scrollId}/>
+                    <PrimaryButton data={realization.teaser} buttonId={realization.scrollId}/>
                 </div>
                 <div className={styles.column}>
-                    <PrimaryButton text={'Nowości'} url={'cheese'}
-                                   description={'tutaj będize jakiś tekst, więcej tekstu i jeszcze troche'}/>
-                    <PrimaryButton text={'Realizacje'} url={'chef'}
-                                   description={'tutaj będize jakiś tekst, więcej tekstu i jeszcze troche'}/>
-                    <PrimaryButton text={'Więcej'} url={'cheese'}
-                                   description={'tutaj będize jakiś tekst, więcej tekstu i jeszcze troche'}/>
+                    <PrimaryButton data={howToOrder.teaser} buttonId={howToOrder.scrollId}/>
+                    <PrimaryButton data={more.teaser} buttonId={more.scrollId}/>
+                    <PrimaryButton data={contact.teaser} buttonId={contact.scrollId}/>
                 </div>
             </div>
             <div className={styles.textWrapper}>

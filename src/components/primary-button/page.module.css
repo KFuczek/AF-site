@@ -1,4 +1,5 @@
 .primaryButton {
+    width: fill-available;
     margin: 20px 0;
     display: flex;
     flex-direction: column;
@@ -9,11 +10,22 @@
     padding: 10px;
     gap: 10px;
     flex-basis: 100%;
-    backdrop-filter: sepia(90%) blur(5px) contrast(100%);
-    background-color: transparent;
-    border-radius: 20px;
+    backdrop-filter: blur(5px) contrast(100%);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 12px;
     border: solid white 1px;
     position: relative;
+    cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
+
+    .titleLine {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
 
 
     .buttonTitle {
@@ -21,11 +33,10 @@
         text-align: left;
         color: #1a1a1a;
         font-family: 'Segoe UI', sans-serif;
-        text-shadow: 0 1px 1px rgba(255, 255, 255, 0.6);
         z-index: 2;
         font-size: 1.25rem;
         font-weight: 700;
-        line-height: 1.75;
+        line-height: 1;
         letter-spacing: 0;
     }
 
@@ -33,10 +44,8 @@
         z-index: 2;
         width: 100%;
         text-align: left;
-        backdrop-filter: blur(20px);
         font-family: 'Rubik', 'Inter', 'Segoe UI', sans-serif;
-        text-shadow: 0 1px 1px rgba(255, 255, 255, 0.6);
-        font-size: 1.125rem;
+        font-size: 1rem;
         font-weight: 400;
         line-height: 1;
         letter-spacing: 0;
@@ -45,22 +54,20 @@
 
     .image {
         z-index: 1;
-        position: absolute;
-        height: 50px;
-        top: 5px;
-        right: -18px;
+        max-height: 50px;
+        position: relative;
         object-fit: contain;
     }
 
     &:hover {
-        background-color: black;
-        color: white;
-        transition: 0.3s ease;
+        background-color: rgba(255, 255, 255, 0.9);
+        transform: translateY(-3px);
+        box-shadow: 0 10px 16px rgba(0, 0, 0, 0.25);
     }
 
     &:active {
-        background-color: black;
-        color: white;
-        transition: 0.3s ease;
+        background-color: rgba(255, 255, 255, 0.9);
+        transform: translateY(-3px);
+        box-shadow: 0 10px 16px rgba(0, 0, 0, 0.25);
     }
 }
