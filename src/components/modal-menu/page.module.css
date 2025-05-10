@@ -38,22 +38,21 @@
             line-height: 1;
         }
 
-        .menuButton {
-            display: block;
-            width: 100%;
-            padding: 10px;
-            margin: 10px 0;
-            font-size: 1rem;
-            background-color: #4CAF50;
-            color: white;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            transition: background-color 0.2s ease;
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 40px 0 0;
         }
 
-        .menuButton:hover {
-            background-color: #388E3C;
+        li {
+            margin-bottom: 20px;
+        }
+
+        a {
+            text-decoration: none;
+            font-size: 20px;
+            color: #1D3D4F;
+            font-weight: 600;
         }
     }
 }

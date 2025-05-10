@@ -9,9 +9,18 @@ export default function StandardCard({title, imageUrl, description}: {
 
     return (
         <div className={styles.card}>
-            Title: {title}
-            Image: {imageUrl}
-            Description: {description}
+            <div className={styles.waveTop}></div>
+
+            <div className={styles.aboutContent}>
+                <h2 className={styles.sectionTitle}>{title}</h2>
+                <img src={imageUrl} alt="image" className={styles.aboutImage}/>
+                <p className={styles.aboutText}>
+                    Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.
+                </p>
+            </div>
+
+            <div className={styles.waveBottom}></div>
+
         </div>
     );
 }
