@@ -15,6 +15,7 @@ export default function StandardCard({title, imageUrl, description}: {
                 <h2 className={styles.sectionTitle}>{title}</h2>
                 <img src={imageUrl} alt="image" className={styles.aboutImage}/>
                 <p className={styles.aboutText}>
+                    {description}
                     Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.
                 </p>
             </div>
