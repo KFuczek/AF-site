@@ -72,7 +72,7 @@ export const paragraphData: ParagraphData = {
         }
     },
     more: {
-        scrollId: 'news',
+        scrollId: 'more',
         card: {
             title: 'news',
             description: 'description',
@@ -86,7 +86,7 @@ export const paragraphData: ParagraphData = {
         }
     },
     contact: {
-        scrollId: 'news',
+        scrollId: 'contact',
         card: {
             title: 'news',
             description: 'description',
