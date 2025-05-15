@@ -1,7 +1,29 @@
 .upButton {
-    display: block;
+    display: none;
+    position: relative;
+    bottom: 20px;
+    right: 20px;
     width: 100px;
     height: 100px;
-    padding-top: 20px;
-    background-color: red;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 30%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    line-height: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    z-index: 1000;
+}
+
+.upButton:hover {
+    background-color: #0056b3;
+    transform: scale(1.1);
+}
+
+.upButton:active {
+    transform: scale(0.95);
 }

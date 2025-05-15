@@ -11,6 +11,6 @@ export default function Home() {
     }, []);
 
     return isSSR ? null : (
-        View()
+        <View/>
     );
 }
