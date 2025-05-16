@@ -17,7 +17,7 @@ export default function Home({paragraphData}: { paragraphData: ParagraphData }) 
             <div className={styles.backgroundImage}>
                 <Image
                     className={styles.image}
-                    src={`${basePath}zisam.jpg`}
+                    src={`${basePath}main-image.png`}
                     alt="Vercel logomark"
                     width={100}
                     height={100}

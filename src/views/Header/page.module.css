@@ -1,6 +1,6 @@
 .wrapper {
     position: relative;
-    background-color: #1D3D4F;
+    background-color: var(--primary-blue);
     height: 100px;
     padding: 10px;
 
@@ -10,7 +10,6 @@
         height: 100%;
         transform: translateX(-50%);
         width: 100%;
-        background-color: #1D3D4F;
         color: white;
         padding: 20px;
         display: flex;
@@ -20,8 +19,9 @@
 
     .text {
         width: 70%;
-        font-size: 1rem;
-        font-weight: 500;
+        font-size: 1.2rem;
+        letter-spacing: 0.5px;
+        font-weight: 700;
         font-family: "Roboto Thin", sans-serif;
     }
 

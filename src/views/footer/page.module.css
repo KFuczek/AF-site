@@ -1,5 +1,66 @@
 .wrapper {
     width: 100%;
-    height: 200px;
-    border: solid blue 1px;
+    height: fit-content;
+    max-height: 200px;
+
+    .footer {
+        background-color: #0f2a48;
+        color: white;
+        font-family: 'Segoe UI', sans-serif;
+        padding: 2rem 1rem 1rem;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .footerContent {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        z-index: 1;
+        position: relative;
+    }
+
+    .footerSection {
+        margin-bottom: 1.5rem;
+        text-align: center;
+    }
+
+    .footerSection h3 {
+        margin-bottom: 0.5rem;
+        font-size: 1.1rem;
+    }
+
+    .footerSection a {
+        color: #a8d97a;
+        text-decoration: none;
+        margin-left: 0.5rem;
+    }
+
+    .footerSection a:hover {
+        text-decoration: underline;
+    }
+
+    .icon {
+        vertical-align: middle;
+    }
+
+    .footerWave {
+        position: absolute;
+        bottom: 40px;
+        left: 0;
+        width: 100%;
+        height: 80px;
+        background: url("data:image/svg+xml;utf8,<svg viewBox='0 0 1440 100' xmlns='http://www.w3.org/2000/svg'><path fill='%230c2644' d='M0,64L80,69.3C160,75,320,85,480,90.7C640,96,800,96,960,85.3C1120,75,1280,53,1360,42.7L1440,32V100H1360C1280,100,1120,100,960,100C800,100,640,100,480,100C320,100,160,100,80,100H0Z'></path></svg>");
+        background-size: cover;
+        z-index: 0;
+    }
+
+    .footerBottom {
+        text-align: center;
+        font-size: 0.85rem;
+        z-index: 2;
+        position: relative;
+        margin-top: 1rem;
+    }
+
 }

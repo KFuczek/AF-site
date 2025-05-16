@@ -35,7 +35,8 @@
     .menu {
         height: 50px;
         width: 50px;
-        background-color: #4CAF50;
+        background-color: #7fb356;
+        border-color: #2c5b38;
         position: relative;
         display: flex;
         align-items: center;
@@ -53,7 +54,7 @@
         position: absolute;
         width: 20px;
         height: 2px;
-        background-color: white;
+        background-color: var(--background-light);
         transition: transform 0.2s ease;
     }
 

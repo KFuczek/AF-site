@@ -1,6 +1,15 @@
 :root {
     --background: #FCFCF8;
     --foreground: #171717;
+
+    --primary-blue: #0f2a48;
+    --light-green: #a8d97a;
+    --accent-green: #acc586;
+    --text-dark: #1a1a1a;
+    --background-light: #f5f5f5;
+    --background-light-2: #fdf8ef;
+    --button-blue: #112d4e;
+    --white: #ffffff;
 }
 
 /*@media (prefers-color-scheme: dark) {*/

@@ -1,26 +1,24 @@
 .upButton {
     display: none;
     position: relative;
-    bottom: 20px;
-    right: 20px;
-    width: 100px;
-    height: 100px;
-    background-color: #007BFF;
+    bottom: 15px;
+    right: 15px;
+    width: 64px;
+    height: 64px;
+    background-color: #2979ff;
     color: white;
-    border: none;
-    border-radius: 30%;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     font-size: 2rem;
     font-weight: bold;
-    text-align: center;
-    line-height: 50px;
+    border: none;
+    border-radius: 50%;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
     cursor: pointer;
-    transition: all 0.3s ease-in-out;
+    transition: background-color 0.3s, transform 0.2s;
     z-index: 1000;
 }
 
 .upButton:hover {
-    background-color: #0056b3;
+    background-color: #1c60d6;
     transform: scale(1.1);
 }
 
